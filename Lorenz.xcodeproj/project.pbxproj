@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B19D41115E680FF00596850 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B19D41015E680FF00596850 /* UIKit.framework */; };
+		5B19D41315E680FF00596850 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B19D41215E680FF00596850 /* Foundation.framework */; };
+		5B19D41515E680FF00596850 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B19D41415E680FF00596850 /* CoreGraphics.framework */; };
+		5B19D41B15E680FF00596850 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B19D41915E680FF00596850 /* InfoPlist.strings */; };
+		5B19D41D15E680FF00596850 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B19D41C15E680FF00596850 /* main.m */; };
+		5B19D42115E680FF00596850 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B19D42015E680FF00596850 /* AppDelegate.m */; };
+		5B19D42415E680FF00596850 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B19D42315E680FF00596850 /* ViewController.m */; };
+		5B19D42715E680FF00596850 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B19D42515E680FF00596850 /* ViewController.xib */; };
+		5B19D42F15E680FF00596850 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B19D42E15E680FF00596850 /* SenTestingKit.framework */; };
+		5B19D43015E680FF00596850 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B19D41015E680FF00596850 /* UIKit.framework */; };
+		5B19D43115E680FF00596850 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B19D41215E680FF00596850 /* Foundation.framework */; };
+		5B19D43915E680FF00596850 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B19D43715E680FF00596850 /* InfoPlist.strings */; };
+		5B19D43C15E680FF00596850 /* LorenzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B19D43B15E680FF00596850 /* LorenzTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B19D43215E680FF00596850 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B19D40315E680FF00596850 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B19D40B15E680FF00596850;
+			remoteInfo = Lorenz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B19D40C15E680FF00596850 /* Lorenz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lorenz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B19D41015E680FF00596850 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5B19D41215E680FF00596850 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5B19D41415E680FF00596850 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5B19D41815E680FF00596850 /* Lorenz-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lorenz-Info.plist"; sourceTree = "<group>"; };
+		5B19D41A15E680FF00596850 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5B19D41C15E680FF00596850 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5B19D41E15E680FF00596850 /* Lorenz-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lorenz-Prefix.pch"; sourceTree = "<group>"; };
+		5B19D41F15E680FF00596850 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5B19D42015E680FF00596850 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5B19D42215E680FF00596850 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5B19D42315E680FF00596850 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5B19D42615E680FF00596850 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		5B19D42D15E680FF00596850 /* LorenzTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LorenzTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B19D42E15E680FF00596850 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		5B19D43615E680FF00596850 /* LorenzTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LorenzTests-Info.plist"; sourceTree = "<group>"; };
+		5B19D43815E680FF00596850 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5B19D43A15E680FF00596850 /* LorenzTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LorenzTests.h; sourceTree = "<group>"; };
+		5B19D43B15E680FF00596850 /* LorenzTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LorenzTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B19D40915E680FF00596850 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B19D41115E680FF00596850 /* UIKit.framework in Frameworks */,
+				5B19D41315E680FF00596850 /* Foundation.framework in Frameworks */,
+				5B19D41515E680FF00596850 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B19D42915E680FF00596850 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B19D42F15E680FF00596850 /* SenTestingKit.framework in Frameworks */,
+				5B19D43015E680FF00596850 /* UIKit.framework in Frameworks */,
+				5B19D43115E680FF00596850 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B19D40115E680FF00596850 = {
+			isa = PBXGroup;
+			children = (
+				5B19D41615E680FF00596850 /* Lorenz */,
+				5B19D43415E680FF00596850 /* LorenzTests */,
+				5B19D40F15E680FF00596850 /* Frameworks */,
+				5B19D40D15E680FF00596850 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B19D40D15E680FF00596850 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B19D40C15E680FF00596850 /* Lorenz.app */,
+				5B19D42D15E680FF00596850 /* LorenzTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B19D40F15E680FF00596850 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B19D41015E680FF00596850 /* UIKit.framework */,
+				5B19D41215E680FF00596850 /* Foundation.framework */,
+				5B19D41415E680FF00596850 /* CoreGraphics.framework */,
+				5B19D42E15E680FF00596850 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B19D41615E680FF00596850 /* Lorenz */ = {
+			isa = PBXGroup;
+			children = (
+				5B19D41F15E680FF00596850 /* AppDelegate.h */,
+				5B19D42015E680FF00596850 /* AppDelegate.m */,
+				5B19D42215E680FF00596850 /* ViewController.h */,
+				5B19D42315E680FF00596850 /* ViewController.m */,
+				5B19D42515E680FF00596850 /* ViewController.xib */,
+				5B19D41715E680FF00596850 /* Supporting Files */,
+			);
+			path = Lorenz;
+			sourceTree = "<group>";
+		};
+		5B19D41715E680FF00596850 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B19D41815E680FF00596850 /* Lorenz-Info.plist */,
+				5B19D41915E680FF00596850 /* InfoPlist.strings */,
+				5B19D41C15E680FF00596850 /* main.m */,
+				5B19D41E15E680FF00596850 /* Lorenz-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B19D43415E680FF00596850 /* LorenzTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B19D43A15E680FF00596850 /* LorenzTests.h */,
+				5B19D43B15E680FF00596850 /* LorenzTests.m */,
+				5B19D43515E680FF00596850 /* Supporting Files */,
+			);
+			path = LorenzTests;
+			sourceTree = "<group>";
+		};
+		5B19D43515E680FF00596850 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B19D43615E680FF00596850 /* LorenzTests-Info.plist */,
+				5B19D43715E680FF00596850 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B19D40B15E680FF00596850 /* Lorenz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B19D43F15E680FF00596850 /* Build configuration list for PBXNativeTarget "Lorenz" */;
+			buildPhases = (
+				5B19D40815E680FF00596850 /* Sources */,
+				5B19D40915E680FF00596850 /* Frameworks */,
+				5B19D40A15E680FF00596850 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lorenz;
+			productName = Lorenz;
+			productReference = 5B19D40C15E680FF00596850 /* Lorenz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5B19D42C15E680FF00596850 /* LorenzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B19D44215E680FF00596850 /* Build configuration list for PBXNativeTarget "LorenzTests" */;
+			buildPhases = (
+				5B19D42815E680FF00596850 /* Sources */,
+				5B19D42915E680FF00596850 /* Frameworks */,
+				5B19D42A15E680FF00596850 /* Resources */,
+				5B19D42B15E680FF00596850 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B19D43315E680FF00596850 /* PBXTargetDependency */,
+			);
+			name = LorenzTests;
+			productName = LorenzTests;
+			productReference = 5B19D42D15E680FF00596850 /* LorenzTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B19D40315E680FF00596850 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Esteban Uribe";
+			};
+			buildConfigurationList = 5B19D40615E680FF00596850 /* Build configuration list for PBXProject "Lorenz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5B19D40115E680FF00596850;
+			productRefGroup = 5B19D40D15E680FF00596850 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B19D40B15E680FF00596850 /* Lorenz */,
+				5B19D42C15E680FF00596850 /* LorenzTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B19D40A15E680FF00596850 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B19D41B15E680FF00596850 /* InfoPlist.strings in Resources */,
+				5B19D42715E680FF00596850 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B19D42A15E680FF00596850 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B19D43915E680FF00596850 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B19D42B15E680FF00596850 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B19D40815E680FF00596850 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B19D41D15E680FF00596850 /* main.m in Sources */,
+				5B19D42115E680FF00596850 /* AppDelegate.m in Sources */,
+				5B19D42415E680FF00596850 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B19D42815E680FF00596850 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B19D43C15E680FF00596850 /* LorenzTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B19D43315E680FF00596850 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B19D40B15E680FF00596850 /* Lorenz */;
+			targetProxy = 5B19D43215E680FF00596850 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5B19D41915E680FF00596850 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B19D41A15E680FF00596850 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5B19D42515E680FF00596850 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B19D42615E680FF00596850 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		5B19D43715E680FF00596850 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B19D43815E680FF00596850 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B19D43D15E680FF00596850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		5B19D43E15E680FF00596850 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B19D44015E680FF00596850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lorenz/Lorenz-Prefix.pch";
+				INFOPLIST_FILE = "Lorenz/Lorenz-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5B19D44115E680FF00596850 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lorenz/Lorenz-Prefix.pch";
+				INFOPLIST_FILE = "Lorenz/Lorenz-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5B19D44315E680FF00596850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lorenz.app/Lorenz";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lorenz/Lorenz-Prefix.pch";
+				INFOPLIST_FILE = "LorenzTests/LorenzTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5B19D44415E680FF00596850 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lorenz.app/Lorenz";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lorenz/Lorenz-Prefix.pch";
+				INFOPLIST_FILE = "LorenzTests/LorenzTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B19D40615E680FF00596850 /* Build configuration list for PBXProject "Lorenz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B19D43D15E680FF00596850 /* Debug */,
+				5B19D43E15E680FF00596850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B19D43F15E680FF00596850 /* Build configuration list for PBXNativeTarget "Lorenz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B19D44015E680FF00596850 /* Debug */,
+				5B19D44115E680FF00596850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5B19D44215E680FF00596850 /* Build configuration list for PBXNativeTarget "LorenzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B19D44315E680FF00596850 /* Debug */,
+				5B19D44415E680FF00596850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B19D40315E680FF00596850 /* Project object */;
+}
