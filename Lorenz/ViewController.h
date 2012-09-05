@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+#import "LorenzAttractor.h"
+
+
 @interface ViewController : UIViewController
+{
+    CALayer *lorenzLayer;
+    NSTimer *lorenzTimer;
+    NSTimeInterval elapsedTime;
+    UIImage *savedDrawingImage;
+    LorenzAttractor *attractor;
+    
+}
+
+- (void) drawLorenz:(NSTimer *)timer;
 
 @end

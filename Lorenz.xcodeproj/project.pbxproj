@@ -13,13 +13,17 @@
 		5B19D41B15E680FF00596850 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B19D41915E680FF00596850 /* InfoPlist.strings */; };
 		5B19D41D15E680FF00596850 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B19D41C15E680FF00596850 /* main.m */; };
 		5B19D42115E680FF00596850 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B19D42015E680FF00596850 /* AppDelegate.m */; };
-		5B19D42415E680FF00596850 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B19D42315E680FF00596850 /* ViewController.m */; };
+		5B19D42415E680FF00596850 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B19D42315E680FF00596850 /* ViewController.mm */; };
 		5B19D42715E680FF00596850 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B19D42515E680FF00596850 /* ViewController.xib */; };
 		5B19D42F15E680FF00596850 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B19D42E15E680FF00596850 /* SenTestingKit.framework */; };
 		5B19D43015E680FF00596850 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B19D41015E680FF00596850 /* UIKit.framework */; };
 		5B19D43115E680FF00596850 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B19D41215E680FF00596850 /* Foundation.framework */; };
 		5B19D43915E680FF00596850 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B19D43715E680FF00596850 /* InfoPlist.strings */; };
 		5B19D43C15E680FF00596850 /* LorenzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B19D43B15E680FF00596850 /* LorenzTests.m */; };
+		5B19D44715E6847300596850 /* LorenzView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B19D44615E6847300596850 /* LorenzView.m */; };
+		5BB6AEA815E6890E009F7683 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB6AEA715E6890E009F7683 /* QuartzCore.framework */; };
+		5BB6AEAB15E689E6009F7683 /* KermitFolder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BB6AEAA15E689E6009F7683 /* KermitFolder.jpg */; };
+		5BB6AEC415F00C85009F7683 /* LorenzAttractor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6AEC215F00C85009F7683 /* LorenzAttractor.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +48,7 @@
 		5B19D41F15E680FF00596850 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5B19D42015E680FF00596850 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5B19D42215E680FF00596850 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5B19D42315E680FF00596850 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5B19D42315E680FF00596850 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		5B19D42615E680FF00596850 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		5B19D42D15E680FF00596850 /* LorenzTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LorenzTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B19D42E15E680FF00596850 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -52,6 +56,12 @@
 		5B19D43815E680FF00596850 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5B19D43A15E680FF00596850 /* LorenzTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LorenzTests.h; sourceTree = "<group>"; };
 		5B19D43B15E680FF00596850 /* LorenzTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LorenzTests.m; sourceTree = "<group>"; };
+		5B19D44515E6847300596850 /* LorenzView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LorenzView.h; sourceTree = "<group>"; };
+		5B19D44615E6847300596850 /* LorenzView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LorenzView.m; sourceTree = "<group>"; };
+		5BB6AEA715E6890E009F7683 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5BB6AEAA15E689E6009F7683 /* KermitFolder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = KermitFolder.jpg; sourceTree = "<group>"; };
+		5BB6AEC215F00C85009F7683 /* LorenzAttractor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LorenzAttractor.cpp; sourceTree = "<group>"; };
+		5BB6AEC315F00C85009F7683 /* LorenzAttractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LorenzAttractor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BB6AEA815E6890E009F7683 /* QuartzCore.framework in Frameworks */,
 				5B19D41115E680FF00596850 /* UIKit.framework in Frameworks */,
 				5B19D41315E680FF00596850 /* Foundation.framework in Frameworks */,
 				5B19D41515E680FF00596850 /* CoreGraphics.framework in Frameworks */,
@@ -81,6 +92,9 @@
 		5B19D40115E680FF00596850 = {
 			isa = PBXGroup;
 			children = (
+				5BB6AEC215F00C85009F7683 /* LorenzAttractor.cpp */,
+				5BB6AEC315F00C85009F7683 /* LorenzAttractor.h */,
+				5BB6AEA715E6890E009F7683 /* QuartzCore.framework */,
 				5B19D41615E680FF00596850 /* Lorenz */,
 				5B19D43415E680FF00596850 /* LorenzTests */,
 				5B19D40F15E680FF00596850 /* Frameworks */,
@@ -114,8 +128,10 @@
 				5B19D41F15E680FF00596850 /* AppDelegate.h */,
 				5B19D42015E680FF00596850 /* AppDelegate.m */,
 				5B19D42215E680FF00596850 /* ViewController.h */,
-				5B19D42315E680FF00596850 /* ViewController.m */,
+				5B19D42315E680FF00596850 /* ViewController.mm */,
 				5B19D42515E680FF00596850 /* ViewController.xib */,
+				5B19D44515E6847300596850 /* LorenzView.h */,
+				5B19D44615E6847300596850 /* LorenzView.m */,
 				5B19D41715E680FF00596850 /* Supporting Files */,
 			);
 			path = Lorenz;
@@ -124,6 +140,7 @@
 		5B19D41715E680FF00596850 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5BB6AEAA15E689E6009F7683 /* KermitFolder.jpg */,
 				5B19D41815E680FF00596850 /* Lorenz-Info.plist */,
 				5B19D41915E680FF00596850 /* InfoPlist.strings */,
 				5B19D41C15E680FF00596850 /* main.m */,
@@ -224,6 +241,7 @@
 			files = (
 				5B19D41B15E680FF00596850 /* InfoPlist.strings in Resources */,
 				5B19D42715E680FF00596850 /* ViewController.xib in Resources */,
+				5BB6AEAB15E689E6009F7683 /* KermitFolder.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +278,9 @@
 			files = (
 				5B19D41D15E680FF00596850 /* main.m in Sources */,
 				5B19D42115E680FF00596850 /* AppDelegate.m in Sources */,
-				5B19D42415E680FF00596850 /* ViewController.m in Sources */,
+				5B19D42415E680FF00596850 /* ViewController.mm in Sources */,
+				5B19D44715E6847300596850 /* LorenzView.m in Sources */,
+				5BB6AEC415F00C85009F7683 /* LorenzAttractor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +384,9 @@
 		5B19D44015E680FF00596850 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lorenz/Lorenz-Prefix.pch";
 				INFOPLIST_FILE = "Lorenz/Lorenz-Info.plist";
@@ -375,6 +398,9 @@
 		5B19D44115E680FF00596850 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lorenz/Lorenz-Prefix.pch";
 				INFOPLIST_FILE = "Lorenz/Lorenz-Info.plist";
@@ -436,6 +462,7 @@
 				5B19D44115E680FF00596850 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B19D44215E680FF00596850 /* Build configuration list for PBXNativeTarget "LorenzTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +471,7 @@
 				5B19D44415E680FF00596850 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
