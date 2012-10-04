@@ -11,22 +11,22 @@
 
 #include <iostream>
 
+/*struct lorenzCoordinates {
+    double x;
+    double y;
+    double z;
+} lorenzCoordinates;*/
+
 class LorenzAttractor {
-    double rho = 0.0;
-    double phi = 0.0;
-    double beta = 0.0;
-    double h = 0.01;
-    
+
 public:
-    LorenzAttractor(double r, double phi, double beta);
-    void    setRho  (double r);
-    void    setPhi  (double p);
-    void   setBeta  (double b);
-    
-    double getRho();
-    double getPhi();
-    double getBeta();
-    
+    double a = 0.0;
+    double b = 0.0;
+    double c = 0.0;
+    double h = 0.01;
+
+    LorenzAttractor(double hv, double av, double bv, double cv);
+        
     double xprime   (double x, double y);
     double yprime   (double x, double y, double z);
     double zprime   (double x, double y, double z);

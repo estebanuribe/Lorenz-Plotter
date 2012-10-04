@@ -9,24 +9,13 @@
 #include "LorenzAttractor.h"
 
 
-LorenzAttractor::LorenzAttractor(double r, double p, double b) {
-    rho = r;
-    phi = p;
-    beta = b;
-    h = 0.0000000000000000001;
+LorenzAttractor::LorenzAttractor(double hv, double av, double bv, double cv) {
+    a = av;
+    b = bv;
+    c = cv;
+    h = hv;
 }
 
-void LorenzAttractor::setRho(double r) { rho = r; }
-
-void LorenzAttractor::setPhi(double p)  { phi = p; }
-
-void LorenzAttractor::setBeta(double b) { beta = b; }
-
-double LorenzAttractor::getRho() { return rho; }
-double LorenzAttractor::getPhi() { return phi; }
-double LorenzAttractor::getBeta() { return beta; }
-
-double LorenzAttractor::xprime(double x, double y) { return x+h*rho*(y - x); }
-double LorenzAttractor::yprime(double x, double y, double z) { return y+h*(x*(phi - z)-y); }
-double LorenzAttractor::zprime(double x, double y, double z) { return z+h*(x*y-beta*z); }
-
+double LorenzAttractor::xprime(double x, double y) { return x + h * a * (y - x); }
+double LorenzAttractor::yprime(double x, double y, double z) { return y + h * (x * (b - z) - y); }
+double LorenzAttractor::zprime(double x, double y, double z) { return z + h * (x * y - c * z); }
