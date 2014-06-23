@@ -32,80 +32,10 @@ static inline double radians (double degrees) { return degrees * M_PI/180; }
     elapsedTime = 0;
     savedDrawingImage = nil;
     
-/*    lorenzLayer = [CALayer layer];
-    lorenzLayer.frame = self.view.layer.bounds;*/
-//    self.view.layer.backgroundColor = [UIColor blueColor].CGColor;
     self.view.layer.frame = CGRectInset(self.view.layer.frame, 20.0, 20.0);
 
 
     lorenzTimer = [NSTimer scheduledTimerWithTimeInterval:0.000001 target:self selector:@selector(drawLorenz:) userInfo:nil repeats:YES];
-   
-    
-/*    CALayer *sublayer = [CALayer layer];
-    sublayer.backgroundColor = [UIColor blueColor].CGColor;
-    sublayer.shadowOffset = CGSizeMake(0, 3);
-    sublayer.shadowRadius = 5.0;
-    sublayer.shadowColor = [UIColor blackColor].CGColor;
-    sublayer.shadowOpacity = 0.8;
-    sublayer.frame = CGRectMake(30, 30, 128, 192);
-    sublayer.borderColor = [UIColor blackColor].CGColor;
-    sublayer.borderWidth = 2.0;
-    sublayer.cornerRadius = 10.0;
-    
-    [self.view.layer addSublayer:sublayer];*/
-    
-/*    CALayer *imageLayer = [CALayer layer];
-    imageLayer.frame = sublayer.bounds;
-    imageLayer.cornerRadius = 10.0;
-
-    imageLayer.contents = (id) [UIImage imageNamed:@"KermitFolder.jpg"].CGImage;
-    imageLayer.masksToBounds = YES;
-    [sublayer addSublayer:imageLayer];
-    
-    CALayer *customDrawn = [CALayer layer];
-    customDrawn.delegate = self;
-    customDrawn.backgroundColor = [UIColor greenColor].CGColor;
-    customDrawn.frame = CGRectMake(30, 250, 128, 40);
-    customDrawn.shadowOffset = CGSizeMake(0, 3);
-    customDrawn.shadowRadius = 5.0;
-    customDrawn.shadowColor = [UIColor blackColor].CGColor;
-    customDrawn.shadowOpacity = 0.8;
-    customDrawn.cornerRadius = 10.0;
-    customDrawn.borderColor = [UIColor blackColor].CGColor;
-    customDrawn.borderWidth = 2.0;
-    customDrawn.masksToBounds = YES;
-    [self.view.layer addSublayer:customDrawn];
-    [customDrawn setNeedsDisplay];*/
-    
-    
-/*    CALayer *orbit1 = [CALayer layer];
-	orbit1.bounds = CGRectMake(0, 0, 200, 200);
-	orbit1.position = self.view.center;
-	orbit1.cornerRadius = 100;
-	orbit1.borderColor = [UIColor redColor].CGColor;
-	orbit1.borderWidth = 1.5;
-	
-	CALayer *planet1 = [CALayer layer];
-	planet1.bounds = CGRectMake(0, 0, 20, 20);
-	planet1.position = CGPointMake(100, 0);
-	planet1.cornerRadius = 10;
-	planet1.backgroundColor = [UIColor redColor].CGColor;
-	[orbit1 addSublayer:planet1];
-	
-	CABasicAnimation *anim1 = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
-	anim1.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-	anim1.fromValue = [NSNumber numberWithFloat:0];
-	anim1.toValue = [NSNumber numberWithFloat:((360*M_PI)/180)];
-	anim1.repeatCount = HUGE_VALF;
-	anim1.duration = 2.0;
-//	[orbit1 addAnimation:anim1 forKey:@"transform"];
-
-    
-    CALayer *points = [CALayer layer];
-    points.bounds = CGRectMake(100,100, 50, 50);
-    points.position = CGPointMake(self.view.center.x+200, self.view.center.y+50);*/
-    
-//	[self.view.layer addSublayer:orbit1];
 }
 
 
@@ -182,8 +112,8 @@ static inline double radians (double degrees) { return degrees * M_PI/180; }
     CGColorRef pointColor = [UIColor whiteColor].CGColor;
     CGContextSetFillColorWithColor(context, pointColor);
     
-//    CGFloat xd = x/z * zoom + offset;
-//    CGFloat xy = y/z * zoom + offset;
+//    CGFloat xd = _x/_z * zoom + offset;
+//    CGFloat xy = _y/z * zoom + offset;
     
 //    CGContextAddArc(context, xd, xy, 10, 0, radians(360), 0);
 //    CGContextFillPath(context);

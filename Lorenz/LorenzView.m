@@ -37,9 +37,6 @@ void drawPointsInContext(double xd, double yd, double zd, CGContextRef context, 
     
     CGContextSetFillColorWithColor(context, fillColor);
     CGPathAddArc(path, NULL, xd, yd, zd, 0, radians(360), 0);
-//    CGContextAddPath(context, path);
-    
-//    CGContextFillPath(context);
     
     CGContextSetStrokeColorWithColor(context, strokeColor);
     CGContextAddPath(context, path);
@@ -212,18 +209,24 @@ void drawLeadPointInContext(double xd, double yd, CGContextRef context, CGColor 
     
     double xd = (xp*10.0)+self.center.x;
     double yd = (yp*10.0)+self.center.y;
-    double zd = zp/24.0;
-    zd = fabs((zd > 40.0)?fmod(zd, 40.0):zd);
-
+    double zd = 1.0;
+//    double zd = zp/24.0;
+//    zd = fabs((zd > 40.0)?fmod(zd, 40.0):zd); zd = (!zd)?1.0:zd;
+    
+    
     double x2d = (x2p*10.0)+self.center.x;
     double y2d = (y2p*10.0)+self.center.y;
-    double z2d = z2p/24.0;
-    z2d = fabs((z2d > 40.0)?fmod(z2d, 40.0):z2d);
+    double z2d = 1.0;
+//    double z2d = z2p/24.0;
+//    z2d = fabs((z2d > 40.0)?fmod(z2d, 40.0):z2d); z2d = (!z2d)?1.0:z2d;
+    
 
     double x3d = (x3p*10.0)+self.center.x;
     double y3d = (y3p*10.0)+self.center.y;
-    double z3d = z3p/24.0;
-    z3d = fabs((z3d > 40.0)?fmod(z3d, 40.0):z3d);
+    double z3d = 1.0;
+//    double z3d = z3p/24.0;
+//    z3d = fabs((z3d > 40.0)?fmod(z3d, 40.0):z3d); z3d = (!z3d)?1.0:z3d;
+    
 
     
     if (_drawLines) {
@@ -259,8 +262,8 @@ void drawLeadPointInContext(double xd, double yd, CGContextRef context, CGColor 
 //        drawPointsInContext(x2d, y2d, z2d, context, _pointColor.CGColor, _pointColor.CGColor);
 //        drawPointsInContext(x3d, y3d, z3d, context, _pointColor.CGColor, _pointColor.CGColor);
 
-        drawPointsInContext(x2d, y2d, z2d, context, [UIColor greenColor].CGColor, [UIColor greenColor].CGColor);
-        drawPointsInContext(x3d, y3d, z3d, context, [UIColor orangeColor].CGColor, [UIColor orangeColor].CGColor);
+//        drawPointsInContext(x2d, y2d, z2d, context, [UIColor greenColor].CGColor, [UIColor greenColor].CGColor);
+//        drawPointsInContext(x3d, y3d, z3d, context, [UIColor orangeColor].CGColor, [UIColor orangeColor].CGColor);
         
 /*        CGMutablePathRef path = CGPathCreateMutable();
 
